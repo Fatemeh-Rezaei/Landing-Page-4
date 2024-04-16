@@ -302,9 +302,6 @@ Hero
 About
 ===============
 */
-.about-center {
-  margin-bottom: 3rem;
-}
 .about-info {
   margin-top: 2rem;
 }
@@ -402,7 +399,98 @@ Services
   .service-icon {
     align-self: flex-start;
   }
-  .service-info{
+  .service-info {
     margin-right: 1rem;
+  }
+}
+
+/*
+=============== 
+Articles
+===============
+*/
+
+.article-card {
+  background-color: var(--clr-grey-4);
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.article-card:hover {
+  box-shadow: var(--dark-shadow);
+  transform: scale(1.02);
+}
+
+.article-img-container {
+  position: relative;
+}
+
+.article-img {
+  height: 15rem;
+  object-fit: cover;
+}
+
+.article-category {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: var(--clr-white);
+  padding: 0.25rem 1rem;
+  background-color: var(--clr-primary-2);
+  margin: 0;
+}
+
+.article-info {
+  padding: 1.25rem 1.5rem;
+}
+
+.article-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-title p {
+  margin: 0;
+}
+
+.article-info p {
+  line-height: 1.8;
+}
+
+.article-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-footer p {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .articles-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .article-card {
+    flex: 0 0 calc(50% - 2rem);
+  }
+
+  .article-btn {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .article-card {
+    flex: 0 0 calc(33.33% - 2rem);
   }
 }
