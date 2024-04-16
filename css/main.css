@@ -578,3 +578,58 @@ Contact
     align-self: flex-start;
   }
 }
+
+/*
+=============== 
+Gallery
+===============
+*/
+
+.gallery-img-container {
+  position: relative;
+  background-color: var(--clr-primary-2);
+}
+
+.gallery-img {
+  height: 17rem;
+  object-fit: cover;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.gallery-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--clr-white);
+  font-size: 2rem;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.gallery-img-container:hover .gallery-icon {
+  opacity: 1;
+}
+
+.gallery-img-container:hover .gallery-img {
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .gallery-img-container {
+    flex: 0 0 calc(50%);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .gallery-img-container {
+    flex: 0 0 calc(25%);
+  }
+}
