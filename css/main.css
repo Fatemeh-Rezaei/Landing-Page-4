@@ -206,7 +206,7 @@ Navbar
 }
 
 .nav-links {
-  display: none;
+  /* display: none; */
 }
 
 .nav-link {
@@ -221,6 +221,10 @@ Navbar
 
 .nav-icons {
   display: none;
+}
+
+.show-links{
+  height: 280px;
 }
 
 .nav-icon {
@@ -632,4 +636,56 @@ Gallery
   .gallery-img-container {
     flex: 0 0 calc(25%);
   }
+}
+
+/*
+=============== 
+Footer
+===============
+*/
+
+.footer {
+  background-color: #10002b;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.footer-link {
+  color: var(--clr-white);
+  transition: var(--transition);
+  margin-right: 1.2rem;
+}
+
+.footer-link:hover{
+  color: var(--clr-primary-2);
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.footer-icon {
+  margin-right: 1rem;
+  font-size: 2rem;
+  color: var(--clr-primary-2);
+  transition: var(--transition);
+}
+
+.footer-icon:hover{
+  color: var(--clr-primary-1);
+}
+
+.copyright{
+  text-align: center;
+  color: var(--clr-white);
 }
